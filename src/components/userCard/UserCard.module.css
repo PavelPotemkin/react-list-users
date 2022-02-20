@@ -1,0 +1,27 @@
+.userCard {
+    padding: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.userCardContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.userCardLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.userCardRight {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.userCard:hover {
+    box-shadow: 0 2px 4px 1px grey;
+}

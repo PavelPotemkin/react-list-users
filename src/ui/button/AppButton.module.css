@@ -1,0 +1,11 @@
+.appBtn {
+    padding: 12px 18px;
+    background: white; 
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    outline: none;
+}
+
+.appBtn:focus {
+    box-shadow: var(--focus-box-shadow);
+}

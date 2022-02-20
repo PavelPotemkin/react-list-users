@@ -1,0 +1,13 @@
+.appSelect {
+    padding: 8px 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.appSelect:focus {
+    box-shadow: var(--focus-box-shadow);
+}
+
+.appSelect option:checked {
+    background: lightgray;
+}

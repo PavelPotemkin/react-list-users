@@ -1,0 +1,10 @@
+.appInput {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.appInput:focus {
+    box-shadow: var(--focus-box-shadow);
+}

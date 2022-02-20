@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/src/assets/fonts/Nunito-Regular.ttf');
+    src: local('HelveticaNeueCyr-Roman'),
+    url('/src/assets/fonts/Nunito-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/src/assets/fonts/Nunito-Regular.woff') format('woff'),
+    url('/src/assets/fonts/Nunito-Regular.ttf') format('truetype'),
+    url('/src/assets/fonts/Nunito-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

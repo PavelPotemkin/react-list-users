@@ -1,0 +1,11 @@
+.userFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media (min-width: 576px) {
+    .userFilter {
+        flex-direction: row;
+    }
+}

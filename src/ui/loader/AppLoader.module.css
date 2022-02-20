@@ -1,0 +1,26 @@
+.appLoader {
+    position: relative;
+    width: 110px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.appLoader svg circle {
+    animation-name: moveCircle;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    transform-origin: center;
+}
+
+@keyframes moveCircle {
+    0% {
+        stroke-dasharray: 0,157;
+        transform: rotateZ(0deg);
+    }
+    
+    100% {
+        stroke-dasharray: 157,0;
+        transform: rotateZ(360deg);
+    }
+}
