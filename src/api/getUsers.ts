@@ -1,20 +1,30 @@
 import {IUser} from "../../types/user";
 
-interface IGetUsers {
+type IGetUsers = (page?: number) => Promise<IUser[]>
+
+interface IUsersList {
   list: {
     [key:IUser['userId']]: Omit<IUser, 'userId'>
   }
 }
 
-const getUsers = async (): Promise<IUser[]> => {
-  const users: IGetUsers = await fetch('/list.json').then(result => result.json())
+// Количество элементов на странице
+const count = 6
 
-  return Object.entries(users.list).map(item => {
+// Как будто отправляем запрос на получение пользователей по странице
+const getUsers: IGetUsers = async (page = 1) => {
+  const users: IUsersList = await fetch('/list.json').then(result => result.json())
+
+  const startUsersNum = (page - 1) * count
+  
+  const convertedUsers = Object.entries(users.list).map(item => {
     return {
       userId: item[0],
       ...item[1]
     }
   })
+
+  return convertedUsers.slice(startUsersNum, startUsersNum + count)
 }
 
 export default getUsers
