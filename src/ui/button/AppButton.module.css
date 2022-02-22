@@ -9,3 +9,8 @@
 .appBtn:focus {
     box-shadow: var(--focus-box-shadow);
 }
+
+.appBtn:hover {
+    box-shadow: var(--focus-box-shadow);
+}
+

@@ -7,22 +7,30 @@ import UserFilter, {IUserFilter} from "./components/userFilter/UserFilter";
 import {useUsers} from "./hooks/useUsers";
 import getStatuses from "./api/getStatuses";
 import {ISelect} from "./ui/select/AppSelect";
-import convertStatusesIntoSelectOptions from "./utils/convertStatuses";
+import convertStatusesIntoSelectOptions from "./utils/status";
 import {IStatus} from "../types/status";
 import classes from './App.module.css'
 import AppLoader from "./ui/loader/AppLoader";
 import setUserStatus from "./api/setUserStatus";
+import Pagination from "./ui/pagination/Pagination";
+import {getPageCount} from "./utils/page";
 
-export type onStatusChangeMethod = (value: IStatus['code'], id: IUser['userId']) => void 
+export type onStatusChangeMethod = (value: IStatus['code'], id: IUser['userId']) => void
+
+// Количество карточек на странице
+const limit = 6
 
 function App() {
   const [users, setUsers] = useState<IUser[]>([])
   const [filter, setFilter] = useState<IUserFilter['filter']>({query: ''})
   const [statuses, setStatuses] = useState<ISelect['options']>([])
-
+  const [page, setPage] = useState<number>(1)
+  const [totalPages, setTotalPages] = useState<number>(0)
+  
   const [fetchUsers, isUsersLoading] = useFetching(async () => {
-    const response = await getUsers();
-    setUsers(response)
+    const {users, total}  = await getUsers(page, limit);
+    setUsers(users)
+    setTotalPages(getPageCount(total, limit))
   })
 
   const [fetchStatuses, isStatusesLoading] = useFetching(async () => {
@@ -57,10 +65,11 @@ function App() {
     // @ts-ignore
     fetchStatuses()
   }, [])
-
+  
   useEffect(() => {
-    console.log(users)
-  }, [users])
+    // @ts-ignore
+    fetchUsers();
+  }, [page])
 
   return (
     <div className="container">
@@ -75,11 +84,21 @@ function App() {
             ?
             <AppLoader/>
             :
-            <UserList
-              statuses={statuses}
-              users={filteredUsers}
-              onStatusChange={onStatusChange}
-            />
+            <>
+              <UserList
+                statuses={statuses}
+                users={filteredUsers}
+                onStatusChange={onStatusChange}
+              />
+              
+              <div className={classes.pagination}>
+                <Pagination
+                  totalPages={totalPages}
+                  page={page}
+                  setPage={setPage}
+                />
+              </div>
+            </>
         }
       </div>
     </div>

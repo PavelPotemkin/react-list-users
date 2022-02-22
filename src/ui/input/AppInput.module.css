@@ -8,3 +8,7 @@
 .appInput:focus {
     box-shadow: var(--focus-box-shadow);
 }
+
+.appInput:hover {
+    box-shadow: var(--focus-box-shadow);
+}

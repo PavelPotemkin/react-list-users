@@ -1,0 +1,24 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.paginationBtn {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.paginationBtnChecked {
+    background: lightgray;
+}
+
+.paginationBtn:hover {
+    box-shadow: var(--focus-box-shadow);
+}
+
+.paginationBtn:focus {
+    box-shadow: var(--focus-box-shadow);
+}

@@ -8,6 +8,10 @@
     box-shadow: var(--focus-box-shadow);
 }
 
+.appSelect:hover {
+    box-shadow: var(--focus-box-shadow);
+}
+
 .appSelect option:checked {
     background: lightgray;
 }
