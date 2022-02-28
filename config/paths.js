@@ -20,7 +20,7 @@ const publicUrlOrPath = getPublicUrlOrPath(
   require(resolveApp('package.json')).homepage,
   process.env.NODE_ENV === 'development' ? 
     process.env.PUBLIC_URL : 
-    'react-list-users'
+    '/react-list-users'
 );
 
 const buildPath = process.env.BUILD_PATH || 'build';
