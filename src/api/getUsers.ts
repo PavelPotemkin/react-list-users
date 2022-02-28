@@ -10,7 +10,7 @@ interface IUsersList {
 
 // Как будто отправляем запрос на получение пользователей по странице
 const getUsers: IGetUsers = async (page = 1, limit) => {
-  const users: IUsersList = await fetch('/list.json').then(result => result.json())
+  const users: IUsersList = await fetch((process.env.NODE_ENV === 'development' ? process.env.PUBLIC_URL : '/react-list-users/') + 'list.json').then(result => result.json())
 
   const startUsersNum = (page - 1) * limit
   
