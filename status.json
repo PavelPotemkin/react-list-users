@@ -1,0 +1,12 @@
+{
+	"status": [
+		{
+			"code": 1,
+			"statusText": "ожидает"
+		},
+		{
+			"code": 2,
+			"statusText": "в работе"
+		}
+	]
+}

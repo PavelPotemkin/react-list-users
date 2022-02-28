@@ -1,0 +1,100 @@
+{
+	"list": {
+		"28936862-34bd-41d5-96c8-aa9da8da0e4f": {
+			"firstName": "1Иван",
+			"lastName": "Иванов",
+			"patronymic": "Иванович",
+			"status": 1
+		},
+		"a18542f8-b157-1091-2d2f-1f22203be1fb": {
+			"firstName": "2Петр",
+			"lastName": "Иванов",
+			"patronymic": "Иванович",
+			"status": 1
+		},
+		"a3a4eafa-f88d-4adf-ab67-eef9818af763": {
+			"firstName": "3Петр",
+			"lastName": "Иванов",
+			"patronymic": "Петрович",
+			"status": 2
+		},
+		"67295cf2-90b5-4e0d-9201-667b53bac167": {
+			"firstName": "4Петр",
+			"lastName": "Петров",
+			"patronymic": "Иванович",
+			"status": 1
+		},
+		"3cee500e-dbb5-464f-a1f5-7a2e7dc9a0fd": {
+			"firstName": "5Михаил",
+			"lastName": "Иванов",
+			"patronymic": "Иванович",
+			"status": 1
+		},
+		"df6de2c7-8a0c-49ee-9b6d-13188c913d54": {
+			"firstName": "6Петр",
+			"lastName": "Михайлов",
+			"patronymic": "Иванович",
+			"status": 1
+		},
+		"cece9b3a-5ac3-4233-93bd-f404ba7a225a": {
+			"firstName": "7Петр",
+			"lastName": "Иванов",
+			"patronymic": "Михайлович",
+			"status": 2
+		},
+		"e46f69c6-daa1-4100-bd49-b83eb31c62cf": {
+			"firstName": "8Петр",
+			"lastName": "Иетров",
+			"patronymic": "Михайлович",
+			"status": 2
+		},
+		"a848ec1e-4345-44c1-a033-5cd24a9a4797": {
+			"firstName": "9Петр",
+			"lastName": "Иетров",
+			"patronymic": "Михайлович",
+			"status": 1
+		},
+		"e46f69c6-daa1-4100-bd49asdaqwq": {
+			"firstName": "10Петр",
+			"lastName": "Иетров",
+			"patronymic": "Михайлович",
+			"status": 2
+		},
+		"a848ec1e-4345-44c1-a033-23123adsda": {
+			"firstName": "11Петр",
+			"lastName": "Иетров",
+			"patronymic": "Михайлович",
+			"status": 1
+		},
+		"3cee500e-dbb5-464f-a1f5-7a2e7dc9a0fdzxcz": {
+			"firstName": "12Михаил",
+			"lastName": "Иванов",
+			"patronymic": "Иванович",
+			"status": 1
+		},
+		"df6de2c7-8a0c-49ee-9b6d-13188c913d52314": {
+			"firstName": "13Петр",
+			"lastName": "Михайлов",
+			"patronymic": "Иванович",
+			"status": 1
+		},
+		"cece9b3a-5ac3-4233-93bd-f404bqsa7a225a": {
+			"firstName": "14Петр",
+			"lastName": "Иванов",
+			"patronymic": "Михайлович",
+			"status": 2
+		},
+		"e46f69c6-daa1-4100-bd49-b83saeb31c62cf": {
+			"firstName": "15Петр",
+			"lastName": "Иетров",
+			"patronymic": "Михайлович",
+			"status": 2
+		},
+		"a848ec1e-4345-44c31231-a033-5cd24a9a4797": {
+			"firstName": "16Петр",
+			"lastName": "Иетров",
+			"patronymic": "Михайлович",
+			"status": 1
+		}
+	}
+}

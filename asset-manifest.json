@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-list-users/static/css/main.97f0239b.css",
+    "main.js": "/react-list-users/static/js/main.473108ac.js",
+    "static/media/Nunito-Regular.otf": "/react-list-users/static/media/Nunito-Regular.9ef857504f7fc2842f88.otf",
+    "static/media/Nunito-Regular.eot": "/react-list-users/static/media/Nunito-Regular.d970f595d00fbc2e8056.eot",
+    "static/media/Nunito-Regular.ttf": "/react-list-users/static/media/Nunito-Regular.325f6b17880102deb0a8.ttf",
+    "static/media/Nunito-Regular.woff": "/react-list-users/static/media/Nunito-Regular.44ce7af3a893b0f5e9f4.woff",
+    "index.html": "/react-list-users/index.html",
+    "main.97f0239b.css.map": "/react-list-users/static/css/main.97f0239b.css.map",
+    "main.473108ac.js.map": "/react-list-users/static/js/main.473108ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97f0239b.css",
+    "static/js/main.473108ac.js"
+  ]
+}
