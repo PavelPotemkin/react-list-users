@@ -10,6 +10,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:PavelPotemkin/tab-link.git main:gh-pages
+git push -f git@github.com:PavelPotemkin/react-list-users.git main:gh-pages
 
 cd -

@@ -61,9 +61,10 @@ function App() {
 
   useEffect(() => {
     // @ts-ignore
-    fetchUsers();
+    fetchUsers().then(r => console.log(r));
     // @ts-ignore
-    fetchStatuses()
+    fetchStatuses().then(r => console.log(r))
+    /* eslint-disable react-hooks/exhaustive-deps */
   }, [])
   
   useEffect(() => {
